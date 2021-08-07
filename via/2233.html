@@ -1,1 +1,558 @@
-""
+<!-------------2233秀恩爱-------------->
+<!------------- 月落 -------------->
+<!------------- 日出 -------------->
+<!------------- 星坠 -------------->
+
+<html lang="zh-CN">
+
+<head>
+<title>2233专属</title>
+<link rel="icon" href="/storage/emulated/0/IDMP/Photos/图标/amh.webp">
+<!-------------标题栏问候语-------------->
+<script type="text/javascript">
+var d = new Date()
+var time = d.getHours()
+var t = document.getElementsByTagName("title")[0]
+if (time < 24) 
+{
+t.innerHTML="主人，晚上好!";
+}
+if (time < 19) 
+{
+t.innerHTML="主人，下午好!";
+}
+if (time < 12) 
+{
+t.innerHTML="主人，早上好!";
+}
+if (time < 5) 
+{
+t.innerHTML="主人，该睡觉了!";
+}
+</script>
+<!-------------标题栏诗词歌赋
+<script type="text/javascript" src=" http://yijuzhan.com/api/word.php?m=js"></script> 
+<script type="text/javascript">
+var s = false; //显示来源信息，true为显示，false为不显示，默认不显示
+var t = document.getElementsByTagName("title")[0];
+if(s){
+t.innerHTML = str[0]+"——"+str[1];
+}else{
+t.innerHTML = str[0];
+}
+</script>
+可以跟上面那个换-------------->
+</head>
+
+
+<!-------------css部分-------------->
+<style>
+/*使用"*"初始化内外边距都为〇*/
+
+* {
+	padding: 0; /*填充*/
+	margin: 0; /*边距*/
+}
+
+/*
+.smaller {
+}logo图标样式
+.logo {
+}logo文字样式
+可以投下阴影
+！！！嗯嗯嗯嗯，我不会……懒の
+*/
+
+/*
+background可以看需求设置如下属性：
+background-color    背景颜色
+background-position    背景图像的位置
+background-size    背景图片的尺寸
+background-repeat    重复背景图像
+background-origin    背景图片的定位区域
+background-clip    背景的绘制区域
+background-attachment    背景图像是否固定或者随着页面的其余部分滚动
+background-image    背景图像
+背景色︰ #f1f6ee  使用夜间默认时修改为#000000即可
+*/
+
+body { /*主页整体样式*/
+text-align: center; /*文本对齐：中心*/
+/*
+background-image:url('http://wx3.sinaimg.cn/large/da6ac54fgy1ftvsoiducwj20u01hc147.jpg' ) !important;
+*/
+/*可换上面的2233图片地址*/
+/*
+background-repeat: no-repeat;
+background-color: #ffffff;
+*/
+background-size: 100% auto !important;
+background-position: top center;
+/*可删上面的固定句语*/
+}
+
+/*可以不要，不能没有
+背景透明度遮罩
+应用各种背景滤镜，比如：模糊、黑白、复古等
+移位
+*/
+
+.frosted-glass { /*磨砂玻璃*/
+backdrop-filter: blur(0pX); /*背景滤镜：模糊*/
+top: ; /*以顶为明*/
+}
+
+#content { /*主要内容排版目录样式*/
+width: 100%; /*宽度*/
+text-align: center; /*文本对齐*/
+position: absolute; /*绝对位置*/
+top: 187.2px; /*调节整体高度*/
+}
+
+.search_part { /*搜索部分*/
+margin-bottom: 70px; /*下边距30px*/
+margin-top: 0px; /*上边距*/
+}
+
+.search_bar { /*搜索栏框架样式*/
+box-shadow: 0 0 5px rgba(70,70,40,.255);
+/*框阴影︰ 0 0 18px rgba(70,70,40,.255);括号里的颜色为Rgb默认，可进入http://rgb.phpddt.com/查询*/
+background-color: rgba(255,255,255,.0); /*背景色*/
+border-radius: 04px; /*边界半径*/
+display: table; /*显示：表*/
+vertical-align: middle; /*垂直对齐：居中*/
+width: 80%;
+height: 40px;
+max-width: 400px; /*最大宽度*/
+margin: ; /*不要边距：10像素 默认布局*/
+text-align: center;
+position: relative; /*相对位置，是否省略，有待测试*/
+font-size: ; /*字体大小，影响框了*/
+font-weight: 700; /*粗细*/
+font-family: ; /*字体系列，有待考察*/
+opacity: 1; /*不透明度(0~1)*/
+border: none; /*边境：无*/
+border-top: 0px dashed lightpink;
+border-bottom: 1.4px solid pink; /*边框底部：1.4px 实线(固体) 粉色*/
+background: ; /*想放图片*/
+
+-webkit-transition-duration: 0.4s; /*-webkit转换持续时间*/
+transition-duration: 0.4s; /*过渡持续时间*/
+animation: search-bar 1s; /*搜索栏动画*/
+}
+@keyframes search-bar { /*关键帧*/
+0% {
+max-width: 130px;
+}
+100% {
+max-width: 400px;
+}
+}
+
+#search_input { /*搜索栏字体样式*/
+width: ;
+height: ;
+background-color: transparent; /*透明*/
+border: none;
+outline: 0; /*大纲*/
+font-size: 16px;
+font-weight: 0;
+color: skyblue;
+caret-color: lightgreen; /*光标颜色*/
+padding: 0 12px;
+border-radius: 4px;
+}
+
+/*搜索栏预设文字颜色属性*/
+#search_input::-webkit-input-placeholder { /*输入占位符*/
+color: ; /*西红柿🍅*/
+font-size: 0.7em; /*默认情况下绝对单位1em=16px*/
+}
+
+#search_submit { /*搜索栏搜索目标确认图标样式*/
+-webkit-animation: fadeIn 1s;
+animation: fadeIn 1s;
+outline: 0; /*轮廓边框*/
+height: 46px;
+width: 46px;
+color: #000;
+float: right; /*浮标位置*/
+font-size:18px;
+font-weight: 500;
+border-radius: 30%;
+background-color: 🍊;
+/*可以加图*/
+background:url('file:///storage/emulated/0/IDMP/Photos/图标/yier_121.gif');
+background-size: 100%;
+background-repeat: no-repeat;
+background-position: center;
+padding: ;
+}
+
+.search.icon:before { /*(被迫)转了45度的"棍"(´∩ω∩｀)*/
+display:none;
+}
+
+.search.icon { /*放大镜的"圆"(边框),,Ծ‸Ծ,,*//*有图则省
+width: 30px;
+height: 30px;
+background-color: transparent;
+border-color: lightpink; /*边框颜色：浅粉红*/
+display: none;
+}
+
+#bookmark_part { /*书签部分*/
+background-color: rgba(255,255,255,0); /*测试请用半透明背景色0.25，好了＾０＾~改为〇*/
+width: 80%;
+border-top: 0px dashed snow; /*测试请改为1px，加条虚线，*/
+}
+
+#box_container { /*书签容器，可放图片*/
+width: 100%;
+text-align: center;
+}
+
+.box { /*书签框架样式*//*●▽●
+-webkit-animation: fadeInDown 1s;
+animation: fadeInDown 1s;
+/*可改上方动画淡出淡入(从上往下)，旋转XQ弹的感觉*/
+-webkit-animation: flipInX 1s;
+animation: flipInX 1s;
+/*
+position: relative; /*相对应
+display: inline-block; /*显示在内部
+width: 70px; /*72px
+border: 0;
+*/
+margin: 4px 9px 4px; /*默认4px 9px 4px，上，左右，下*/
+transform: scale(1,1); /*变换：缩放*/
+}
+
+.box a { /*书签图标样式*/
+width: 100%;
+height: 100%;
+position: absolute; /*不受限制*/
+left: 0;
+top: 0;
+}
+
+.icon { /*字体样式*/
+width: 3em; 
+height: 3em;
+max-width: 72px; /*最大宽度*/
+}
+
+/*
+书签字体样式
+颜色: #232323;使用夜间模式时修改为#eee或者#f2eada即可
+高度︰ 1.5em;
+线的高度︰ 1.5em;
+宽度︰ 72px;
+字体大小︰ 0.75em;
+白色空间︰ nowrap;无包装
+溢出︰ 隐藏;
+边距︰ 默认布局;
+-webkit 边框顶部右半径︰ 5px;
+-webkit 边框底部右半径︰ 5px;
+文本溢出︰ 省略;
+-o 文本溢出︰ 省略;
+气相色谱-质谱-文本-溢出︰ 省略;
+填充顶部︰ 3px;
+填充底部︰ 8px;
+*/
+.url {
+color: #232323;
+/*-_-#
+height: 1.5em;
+line-height: 1.5em;
+width: 70px;
+font-size: -0.75em;
+white-space: nowrap;
+overflow: hidden;
+margin: auto;
+-webkit-border-top-right-radius: 5px;
+-webkit-border-bottom-right-radius: 5px;
+text-overflow: ellipsis;
+-o-text-overflow: ellipsis;
+-ms-text-overflow: ellipsis;
+padding-top: 0px;
+padding-bottom: 0px;
+/*
+display: none;
+/*显示：无；用来隐藏字体*/
+}
+
+/*可以不用，不能没有
+html点击书签的高亮提示
+html {
+-webkit-tap-highlight-color: transparent;
+}
+*/
+
+.title { /*书签内部，圆带着文字*/
+/*
+background: tomato !important;
+background-color: #fff;
+*//*能省则省
+font-size: 16px;
+width: 70px;
+height: 30px;
+line-height: 30px;
+padding: 0 0 0 0; /*0 10px 0 20px*/
+color: #fff;
+}
+
+.overlay { /*图标覆盖*/
+filter: grayscale(0); /*滤镜：黑白(0~1)*/
+}
+
+/*百度搜索建议*/
+.bdSug_wpr {
+left: 10% !important;
+width: 70% !important;
+background: transparent !important; /*可放图片
+background:url('file:///storage/emulated/0/IDMP/Photos/22036.jpg') !important;
+background-size: 100% !important;
+background-repeat: no-repeat !important;
+background-position: bottom center !important;
+background-attachment: local !important;
+*/
+border-color: transparent !important;
+border-left-color: powderblue !important;
+border-radius: 0;
+}
+
+.bdSug_wpr td {
+color: tomato !important;
+font-size: 16px !important;
+padding-left: 6% !important;
+text-align: left !important;
+}
+
+/*下方为动画样式*/
+ @-webkit-keyframes flipInX {
+ 0% {
+ -webkit-transform: perspective(400px) rotateX(90deg);
+ transform: perspective(400px) rotateX(90deg);
+ opacity: 0
+}
+ 40% {
+ -webkit-transform: perspective(400px) rotateX(-10deg);
+ transform: perspective(400px) rotateX(-10deg)
+}
+ 70% {
+ -webkit-transform: perspective(400px) rotateX(10deg);
+ transform: perspective(400px) rotateX(10deg)
+}
+ 100% {
+ -webkit-transform: perspective(400px) rotateX(0);
+ transform: perspective(400px) rotateX(0);
+ opacity: 1
+}
+}
+ @keyframes flipInX {
+ 0% {
+ -webkit-transform: perspective(400px) rotateX(90deg);
+ -ms-transform: perspective(400px) rotateX(90deg);
+ transform: perspective(400px) rotateX(90deg);
+ opacity: 0
+}
+ 40% {
+ -webkit-transform: perspective(400px) rotateX(-10deg);
+ -ms-transform: perspective(400px) rotateX(-10deg);
+ transform: perspective(400px) rotateX(-10deg)
+}
+ 70% {
+ -webkit-transform: perspective(400px) rotateX(10deg);
+ -ms-transform: perspective(400px) rotateX(10deg);
+ transform: perspective(400px) rotateX(10deg)
+}
+ 100% {
+ -webkit-transform: perspective(400px) rotateX(0);
+ -ms-transform: perspective(400px) rotateX(0);
+ transform: perspective(400px) rotateX(0);
+ opacity: 1
+}
+}
+
+ @-webkit-keyframes fadeIn {
+ 0% {
+ opacity: 0
+}
+ 100% {
+ opacity: 1
+}
+}
+ @keyframes fadeIn {
+ 0% {
+ opacity: 0
+}
+ 100% {
+ opacity: 1
+}
+}
+
+ @-webkit-keyframes fadeInDown {
+ 0% {
+ opacity: 0;
+ -webkit-transform: translateY(-20px);
+ transform: translateY(-20px)
+}
+ 100% {
+ opacity: 1;
+ -webkit-transform: translateY(0);
+ transform: translateY(0)
+}
+}
+ @keyframes fadeInDown {
+ 0% {
+ opacity: 0;
+ -webkit-transform: translateY(-20px);
+ -ms-transform: translateY(-20px);
+ transform: translateY(-20px)
+}
+ 100% {
+ opacity: 1;
+ -webkit-transform: translateY(0);
+ -ms-transform: translateY(0);
+ transform: translateY(0)
+}
+}
+
+</style>
+<!-------------分部结束-------------->
+
+
+<!-------------搜索栏---->
+<script type="text/javascript" src=" http://yijuzhan.com/api/word.php?m=js"></script>
+<!---与标题栏合并的话，上面可以删除了---->
+<script>
+requestAnimationFrame(function() {
+var s2 = true;
+var sI = document.getElementById('search_input');
+if(s2){
+sI.placeholder = str[0]+' ——'+str[1];
+}else{
+sI.placeholder = str[1];
+}
+})
+</script>
+<!---可以加------------->
+
+
+<!-------------主体部分-------------->
+<body>
+
+<div class="sha"> 
+<a href=""></a>
+<p><img class="bai" src="https://img.catct.cn/" ></p></div>
+<div>
+<p class="tian"><a href="https://img.catct.cn/"></a>山有木兮木有枝，心悦君兮君不知</p>
+</div>
+
+<p id="hitokoto"><a href="#" id="hitokoto_text"></a></p>
+<script src="https://v1.hitokoto.cn/?encode=js&select=%23hitokoto" defer></script>
+
+<script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
+<div id="poem_sentence"></div>
+<div id="poem_info"></div>
+<script type="text/javascript">
+jinrishici.load(function(result) {
+var sentence = document.querySelector("#poem_sentence")
+var info = document.querySelector("#poem_info")
+var chaodai = result.data.origin.dynasty
+var zuozhe = result.data.origin.author
+var biaoti = result.data.origin.title
+sentence.innerHTML = result.data.content
+info.innerHTML = '——' + '【' + chaodai + '】' + zuozhe + '《' + biaoti + '》'
+});
+</script>
+
+</body>
+
+<!-------------额外css-------------->
+<style>
+
+.sha {
+-webkit-animation: fadeIn 1s;
+animation: fadeIn 1s;
+/*淡入的图片*/
+position: absolute;//不受限制
+display: block;//阻止
+width: 100%;
+border: 0;
+top: -187.2px;//随位置显示而改变(-0px)
+}
+
+.sha a {
+width: 100%;
+height: 97.6%;
+position: absolute;
+left: 0;
+top: 0;//这个和上面那个可以省略
+}
+
+.tian a {
+width: 51%;
+height: 16px;
+position: absolute;
+left: 49%;
+top: 0;
+}
+
+.bai {
+width: 100%;
+height: 100%;
+max-width: 100%;
+opacity: 1;
+}
+
+.tian {
+-webkit-animation: fadeInDown 1s;
+animation: fadeInDown 1s;
+
+color: skyblue;
+height: 100%;
+width: 90%;
+font-size: 0.69em;
+margin: auto;
+padding-top: 0px;
+padding-bottom: 0px;
+position: absolute;
+top: 63.2px;
+text-align: right;
+}
+
+#hitokoto {
+width: 100%;
+max-width: 100%;
+background-color: ;
+position: absolute;
+top: 406px;
+
+}
+
+#poem_sentence {
+width: 100%;
+max-width: 100%;
+background-color: ;
+color: #fff;
+position: absolute;
+top: 300px;
+text-align: center;
+}
+#poem_info {
+width: 100%;
+max-width: 100%;
+background-color: ;
+color: #fff;
+position: absolute;
+top: 330px;
+text-align: right;
+}
+
+</style>
+
+
+</html>
+
